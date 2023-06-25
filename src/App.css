@@ -19,9 +19,9 @@ html,body{
   background-size: 100%;
   background-repeat: no-repeat ;
   background-image: url("https://www.collegebatch.com/static/clg-gallery/nirma-university-ahmedabad-214589.jpg");
-
+  */
   background: #f2f2f2;
-  background: linear-gradient(-135deg, #c850c0, #4158d0);*/
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
 }
 ::selection{
   background: #4158d0;

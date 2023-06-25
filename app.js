@@ -10,9 +10,6 @@ app.use(cors())
 app.get("/",cors(),(req,res)=>{
 })
 
-app.get("/About",(req,res)=>{
-    res.send("About")
-})
 
 app.post("/",async(req,res)=>{
     const{email,password}=req.body
@@ -61,6 +58,17 @@ app.post("/register",async(req,res)=>{
     }
 
 })
+
+app.post("/home", async (req, res) => {
+    try {
+      const data = await collection.find();
+      res.json(data);
+    } catch (e) {
+      res.json("fail");
+    }
+  });
+  
+
 
 app.listen(8000,()=>{
     console.log("port connected");
